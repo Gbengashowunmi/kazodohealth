@@ -1,0 +1,233 @@
+main {
+  width: 95%;
+  min-height: 500px;
+  // height: fit-content;
+  margin: 1rem auto 3rem auto;
+  // border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 1rem;
+  .left {
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    .partners {
+      height: 70px;
+      display: flex;
+      gap: 1rem;
+      .partner {
+        border: 2px solid blue;
+        height: 100%;
+        width: 100px;
+      }
+    }
+  }
+  .right {
+    height: inherit;
+    width: 100%;
+    .image {
+      width: 100%;
+      height: inherit;
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.categories {
+  height: 100px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  .category {
+    background-color: var(--clr-white);
+    box-shadow: 2px 4px 4px var(--clr-grey);
+    border-radius: 8px;
+    width: 300px;
+  }
+}
+
+.find_opportunities {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  .left {
+    text-align: left;
+    width: 90%;
+    .find_opp_steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+      .step {
+        display: flex;
+        gap: 1.5rem;
+        .title {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .right {
+    border-radius: 10px;
+    .image {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.buy_sell {
+  width: 95%;
+  margin: auto;
+  text-align: left;
+  min-height: 400px;
+  .product_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    .item {
+      height: 200px;
+      border-radius: 10px;
+      background-color: var(--clr-white);
+      transition: 0.6s;
+      cursor: pointer;
+    }
+  }
+  .item:hover {
+    background-color: var(--clr-light-grey);
+    transform: scale(1.02);
+  }
+}
+
+.recruiters {
+  width: 95%;
+  min-height: 500px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  .left {
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .offers {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      .offer {
+        display: flex;
+        text-align: left;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+.medical_centers {
+  display: flex;
+  flex-direction: column;
+  hr {
+    // height: 4px;
+    width: 80%;
+    color: red;
+    background-color: var(--clr-grey);
+  }
+  .hospital_card_wrapper {
+    width: 100%;
+    min-height: 300px;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding-left: 2rem;
+    .hospital_card {
+      min-width: 300px;
+      height: 300px;
+      margin: 1rem 0;
+      // height: fit-content;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 3px 4px 8px var(--clr-grey);
+
+      .image {
+        width: 100%;
+        height: 60%;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px 10px 0 0;
+        }
+      }
+      .hospital_description {
+        height: 40%;
+        text-align: left;
+        width: 90%;
+        margin: auto;
+        padding: 1rem 0;
+        p {
+          font-size: 90%;
+        }
+        .green {
+          background-color: var(--clr-secondary);
+        }
+      }
+    }
+  }
+}
+
+.swap {
+  width: 95%;
+  min-height: 400px;
+  margin: 2rem auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  border: 1px solid var(--clr-secondary);
+  border-radius: 10px;
+  color: var(--clr-primary);
+  .content {
+    text-align: left;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    .green{
+      background-color: var(--clr-secondary);
+    }
+  }
+}

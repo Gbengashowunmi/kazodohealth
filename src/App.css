@@ -1,0 +1,83 @@
+:global {
+  @import "node_modules/slick-carousel/slick/slick";
+}
+:root {
+  /* primary colors and shades  */
+  --clr-primary: #0020ff;
+  --clr-very-light-primary: #dcdff8;
+
+  --clr-grey:#808080;
+  --clr-light-grey:#c5c3c3;
+  /* secondary colors and shades  */
+--clr-secondary: #067e06;
+  /* borders  */
+  --grey-border: 1px solid #c6c6c7;
+  /* shadows  */
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --clr-primary-light: #2843f5;
+  --clr-light-blue-btn: #adb7fc;
+  --clr-white: #fff;
+  --clr-background-grey: rgb(240, 244, 247);
+  --clr-border-shadow: rgb(161, 161, 161);
+  --clr-reddish-brown: rgb(196, 4, 4);
+  --clr-darker-reddish-brown: rgb(128, 3, 3);
+}
+
+/* *{
+  box-sizing: border-box;
+  padding: 0;
+} */
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.App {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /* overflow-x: hidden; */
+  background-color: var(--clr-very-light-primary);
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: var(--clr-primary);
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 4rem;
+}
+h5 {
+  font-size: 3rem;
+}
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+/* .App .scroll_up {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: var(--clr-primary);
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 15%;
+} */
