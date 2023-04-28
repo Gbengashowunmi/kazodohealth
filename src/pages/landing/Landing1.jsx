@@ -2,23 +2,39 @@ import { Button } from "@mui/material";
 import HeaderFooter from "../../components/header-footer/HeaderFooter";
 import "./landing.scss";
 import { Icon } from "@iconify/react";
+import { Typewriter } from "react-simple-typewriter";
 export default function Landing1() {
   return (
     <HeaderFooter>
       <main>
         <aside className="left">
-          <h1>All your medical expectations in one place</h1>
+          <h1 className="typewriter">
+            <Typewriter
+              words={[
+                "All your medical expectations in one place.",
+                "Buy, Sell, Swap Medical Equipments with ease.",
+                "Donate blood and save the world.",
+                "Find Unlimited Opportunities by one click.",
+              ]}
+              loop={5}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={10}
+              delaySpeed={1000}
+              // onLoopDone={handleDone}
+              // onType={handleType}
+            />
+          </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
             laudantium dolorem quod, eveniet autem nemo! Lorem ipsum dolor sit
             amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Laudantium, deserunt.
           </p>
-
           <Button variant="contained" className="secondary_button">
             Explore possibilities
           </Button>
-
           <p className="grey">Endorsed by</p>
           <div className="partners">
             <div className="partner"></div>

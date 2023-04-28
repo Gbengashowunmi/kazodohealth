@@ -71,6 +71,35 @@ p {
   padding: 0;
   margin: 0;
 }
+
+
+@media (max-width:600px) {
+  h1 {
+  font-size: 2rem;
+  color: var(--clr-primary);
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 4rem;
+}
+h5 {
+  font-size: 3rem;
+}
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+}
 /* .App .scroll_up {
   width: 3rem;
   height: 3rem;
