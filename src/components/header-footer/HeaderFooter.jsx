@@ -1,7 +1,9 @@
 import { Button } from "@mui/material";
 import "./headerfooter.scss";
 import { Icon } from "@iconify/react";
+import { useState } from "react";
 export default function HeaderFooter({ children }) {
+
   return (
     <div className="head_foot_wrapper">
       <header className="header_1">
@@ -10,7 +12,13 @@ export default function HeaderFooter({ children }) {
         </div>
         <div className="search">
           <input type="text" placeholder="Search" />
-          <Icon icon="cil:search" color="black" width="20" height="20" className="search_icon" />
+          <Icon
+            icon="cil:search"
+            color="black"
+            width="20"
+            height="20"
+            className="search_icon"
+          />
         </div>
         <div className="actions">
           <Button variant="contained" className="red_button">
@@ -23,6 +31,9 @@ export default function HeaderFooter({ children }) {
             Become a vendor
           </Button>
         </div>
+        {/* <div className="nav_bar">
+          <TemporaryDrawer />
+        </div> */}
       </header>
       <header className="header_2">
         <p>Find Opporunities</p>
@@ -31,6 +42,89 @@ export default function HeaderFooter({ children }) {
         <p>Go to Shop</p>
       </header>
       {children}
+      <footer>
+        <div className="footer_nav">
+          <ul>
+            <h6>Sit amet.</h6>
+            <li>natus qui?</li>
+            <li>Asperiores,</li>
+            <li>sit sequi?</li>
+            <li>adipisci veniam</li>
+            <li>et fuga</li>
+            <li>explicabo quod,</li>
+            <li>Sunt</li>
+            <li>ad maxime.</li>
+            <li>vel voluptate</li>
+            <li>Laboriosam libero</li>
+          </ul>
+          <ul>
+            <h6>Consectetur</h6>
+            <li>Lorem, elit. </li>
+            <li>ipsum dolor</li>
+            <li>sit amet </li>
+            <li>consectetur</li>
+            <li>adipisicing</li>
+            <li>Praesentium</li>
+            <li>reprehenderit</li>
+            <li>consectetur</li>
+            <li>voluptatum !</li>
+          </ul>
+          <ul>
+            <h6>Ldolor sit.</h6>
+            <li>Lorem, elit. </li>
+            <li>ipsum dolor</li>
+            <li>sit amet </li>
+            <li>consectetur</li>
+            <li>adipisicing</li>
+            <li>Praesentium</li>
+            <li>reprehenderit</li>
+            <li>consectetur</li>
+            <li>voluptatum !</li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul>
+            <h6>Lorem ipsum.</h6>
+            <li>Lorem, elit. </li>
+            <li>ipsum dolor</li>
+            <li>sit amet </li>
+            <li>consectetur</li>
+            <li>adipisicing</li>
+            <li>Praesentium</li>
+            <li>reprehenderit</li>
+            <li>consectetur</li>
+            <li>voluptatum !</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div className="socials">
+          <p>Follow Us</p>
+          <Icon
+            icon="ic:twotone-facebook"
+            color="white"
+            width="30"
+            height="30"
+          />
+          <Icon
+            icon="ant-design:twitter-circle-filled"
+            color="white"
+            width="30"
+            height="30"
+          />
+          <Icon icon="ri:instagram-fill" color="white" width="30" height="30" />
+          <Icon icon="ri:whatsapp-fill" color="white" width="30" height="30" />
+        </div>
+        <div className="copyright">
+          <p>© 2019 - 2023 Medpau International Limited</p>
+
+          <ul>
+            <li>Terms of Service </li>
+            <li>Privacy Policy</li>
+            <li>CA Notice at Collection</li>
+          </ul>
+        </div>
+      </footer>
     </div>
   );
 }

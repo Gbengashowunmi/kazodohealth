@@ -3,7 +3,6 @@ main {
   min-height: 500px;
   // height: fit-content;
   margin: 1rem auto 3rem auto;
-  // border: 2px solid red;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 1rem;
@@ -14,17 +13,25 @@ main {
     flex-direction: column;
     gap: 1rem;
     align-items: flex-start;
-    .typewriter{
-      min-height: 200px;
+    .typewriter {
+      min-height: 260px;
     }
     .partners {
       height: 70px;
       display: flex;
-      gap: 1rem;
+      justify-content: left;
+      // gap: .rem;
+      width: 100%;
       .partner {
-        border: 2px solid blue;
+        // border: 2px solid blue;
         height: 100%;
         width: 100px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 6px;
+        }
       }
     }
   }
@@ -214,6 +221,7 @@ main {
   width: 95%;
   min-height: 400px;
   margin: 2rem auto;
+  padding: 1rem 0.5rem;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -221,6 +229,14 @@ main {
   border: 1px solid var(--clr-secondary);
   border-radius: 10px;
   color: var(--clr-primary);
+  .image {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
   .content {
     text-align: left;
     height: fit-content;
@@ -229,73 +245,163 @@ main {
     flex-direction: column;
     gap: 1rem;
     align-items: flex-start;
-    .green{
+    .green {
       background-color: var(--clr-secondary);
     }
   }
 }
 
-
-
-@media (max-width:600px) {
+@media (max-width: 600px) {
   main {
-  width: 95%;
-  min-height: 500px;
-  // height: fit-content;
-  margin: 1rem auto 3rem auto;
-  border: 2px solid red;
-  grid-template-columns: 1fr;
-  .left {
-    // width: 90%;
-    border: 2px solid green;
-    text-align: left;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
-    .typewriter{
-      min-height: fit-content;
+    width: 95%;
+    min-height: 500px;
+    margin: 1rem auto 2rem auto;
+    grid-template-columns: 1fr;
+    .left {
+      height: 100%;
+      .typewriter {
+        min-height: 120px;
+        margin-bottom: 0;
+      }
+      .partners {
+        height: 70px;
+        .partner {
+          width: 80px;
+          img {
+            border-radius: 10px;
+          }
+        }
+      }
     }
-    .partners {
-      height: 70px;
+    .right {
+      height: inherit;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      .image {
+        margin: auto;
+
+        width: 60%;
+        height: inherit;
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .categories {
+    height: 100px;
+    // width: 100%;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    .category {
+      border: 2px solid maroon;
+      background-color: var(--clr-white);
+      box-shadow: 2px 4px 4px var(--clr-grey);
+      border-radius: 8px;
+      padding: 1rem;
+
+      width: 400px !important;
+    }
+  }
+
+  .find_opportunities {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    .left {
+      width: 100%;
+      .find_opp_steps {
+        gap: 1rem;
+        .step {
+          display: flex;
+          gap: 1.5rem;
+        }
+      }
+    }
+  }
+  .buy_sell {
+    .product_items {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      .item {
+        height: 150px;
+      }
+    }
+  }
+
+  .recruiters {
+    margin: 1rem auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  //checkback soon
+  .medical_centers {
+    width: 95%;
+    margin: auto;
+    text-align: left;
+    hr {
+      width: 100%;
+    }
+    .hospital_card_wrapper {
+      width: 100%;
+      min-height: 150px;
+      margin: auto;
       display: flex;
       gap: 1rem;
-      .partner {
-        border: 2px solid blue;
-        height: 100%;
-        width: 100px;
+      overflow-x: scroll;
+      padding-left: 1rem;
+      .hospital_card {
+        min-width: 200px;
+        height: 200px;
+        margin: 1rem 0;
+        width: 200px;
+        .image {
+          height: 50%;
+          img {
+            object-fit: cover;
+          }
+        }
+        .hospital_description {
+          // border: 2px solid maroon;
+          height: 50%;
+          width: 100%;
+          margin: .5rem auto;
+          padding: 0 .5rem;
+          font-size: 90%;
+          h6 {
+            font-size: 1rem;
+            margin: 0;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+          .green {
+            background-color: var(--clr-secondary);
+          }
+          .read_more {
+            width: 50%;
+            font-size: 0.5rem;
+            padding: 0.1rem ;
+            margin: .5rem;
+          }
+        }
       }
     }
   }
-  .right {
-    height: inherit;
-    border: 2px solid blue;
-    .image {
-      width: 100%;
-      border: 2px solid blue;
-      height: inherit;
-      img {
-        width: 100%;
-        object-fit: cover;
-        height: 100%;
-      }
-    }
-  }
-}
 
-.categories {
-  height: 100px;
-  width: 95%;
-  margin: auto;
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  .category {
-    background-color: var(--clr-white);
-    box-shadow: 2px 4px 4px var(--clr-grey);
-    border-radius: 8px;
-    width: 300px;
+  .swap {
+    width: 95%;
+    margin: 1rem auto;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border: 1px solid var(--clr-secondary);
+    .content {
+      gap: 0.1rem;
+    }
   }
-}
 }

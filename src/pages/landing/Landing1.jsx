@@ -16,10 +16,10 @@ export default function Landing1() {
                 "Donate blood and save the world.",
                 "Find Unlimited Opportunities by one click.",
               ]}
-              loop={5}
+              loop={0}
               cursor
               cursorStyle="|"
-              typeSpeed={70}
+              typeSpeed={10}
               deleteSpeed={10}
               delaySpeed={1000}
               // onLoopDone={handleDone}
@@ -37,10 +37,18 @@ export default function Landing1() {
           </Button>
           <p className="grey">Endorsed by</p>
           <div className="partners">
-            <div className="partner"></div>
-            <div className="partner"></div>
-            <div className="partner"></div>
-            <div className="partner"></div>
+            <div className="partner">
+              <img src="/images/partners/partner1.jpeg" alt="" />
+            </div>
+            <div className="partner">
+              <img src="/images/partners/partner2.jpeg" alt="" />
+            </div>
+            <div className="partner">
+              <img src="/images/partners/partner3.jpeg" alt="" />
+            </div>
+            <div className="partner">
+              <img src="/images/partners/partner4.jpeg" alt="" />
+            </div>
           </div>
         </aside>
         <aside className="right">
@@ -227,7 +235,7 @@ export default function Landing1() {
             <div className="hospital_description">
               <h6>Medpau Int'l Ltd</h6>
               <p>Lorem ipsum dolor sit amet consectetur...</p>
-              <Button variant="contained" className="green">
+              <Button variant="contained" className="green read_more">
                 Read More
               </Button>
             </div>
@@ -242,7 +250,7 @@ export default function Landing1() {
             <div className="hospital_description">
               <h6>Medpau Int'l Ltd</h6>
               <p>Lorem ipsum dolor sit amet consectetur...</p>
-              <Button variant="contained" className="green">
+              <Button variant="contained" className="green read_more">
                 Read More
               </Button>
             </div>
@@ -257,7 +265,7 @@ export default function Landing1() {
             <div className="hospital_description">
               <h6>Medpau Int'l Ltd</h6>
               <p>Lorem ipsum dolor sit amet consectetur...</p>
-              <Button variant="contained" className="green">
+              <Button variant="contained" className="green read_more">
                 Read More
               </Button>
             </div>
@@ -272,7 +280,7 @@ export default function Landing1() {
             <div className="hospital_description">
               <h6>Medpau Int'l Ltd</h6>
               <p>Lorem ipsum dolor sit amet consectetur...</p>
-              <Button variant="contained" className="green">
+              <Button variant="contained" className="green read_more">
                 Read More
               </Button>
             </div>
@@ -287,7 +295,7 @@ export default function Landing1() {
             <div className="hospital_description">
               <h6>Medpau Int'l Ltd</h6>
               <p>Lorem ipsum dolor sit amet consectetur...</p>
-              <Button variant="contained" className="green">
+              <Button variant="contained" className="green read_more">
                 Read More
               </Button>
             </div>
