@@ -65,35 +65,111 @@ export default function Landing1() {
         <h6>Categories</h6>
         <section className="categories">
           <div>
-            <div className="category">find opportunities</div>
+            <div className="category">
+              <div className="overlay"></div>
+              <div className="image">
+                <img
+                  src="/images/businessman-walking-key-door-new-opportunity_34259-72.jpg"
+                  alt=""
+                />
+              </div>
+              <p>find opportunities</p>
+            </div>
           </div>
           <div>
-            <div className="category">Recruitment Agencies</div>
+            <div className="category">
+              <div className="overlay"></div>
+              <div className="image">
+                <img
+                  src="/images/we-need-you-message-concept_53876-167106.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Recruitment Agencies</p>
+            </div>
           </div>
           <div>
-            <div className="category">donate blood</div>
+            <div className="category">
+              <div className="overlay"></div>
+              <div className="image">
+                <img
+                  src="/images/240_F_222823036_n9ocpis9ILjK6KuOMV4v7urh4dlHCvSq.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Donate blood</p>
+            </div>
           </div>
           <div>
-            <div className="category">job seekers</div>
+            <div className="category">
+              <div className="overlay"></div>
+              <div className="image">
+                <img
+                  src="/images/job-3d-word-with-loupe-chalkboard_165073-777.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Job seekers</p>
+            </div>
           </div>
           <div>
-            <div className="category">buy and sell</div>
+            <div className="category">
+              <div className="overlay"></div>
+              <div className="image">
+                <img src="/images/buy-sell-car_2227-315.jpg" alt="" />
+              </div>
+              <p>Buy and Sell</p>
+            </div>
           </div>
           <div>
-            <div className="category">Swap equipments</div>
+            <div className="category">
+              <div className="overlay"></div>
+              <div className="image">
+                <img
+                  src="/images/update-icon-3d-render-illustration_567294-3081.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Swap Equipments</p>
+            </div>
           </div>
           <div>
-            <div className="category">Medical centers</div>
+            <div className="category">
+              <div className="overlay"></div>
+              <div className="image">
+                <img
+                  src="/images/240_F_23041642_rVOcZZWZWtZjaooUCx8tM0kSDvlxqY3Y.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Medical Centers</p>
+            </div>
           </div>
           <div>
-            <div className="category">Blog</div>
+            <div className="category">
+              <div className="overlay"></div>
+              <div className="image">
+                <img
+                  src="/images/computer-keyboard-blog-concept_172429-825.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Blog</p>
+            </div>
           </div>
           <div>
-            <div className="category">Blog</div>
+            <div className="category">
+              <div className="overlay"></div>
+              <div className="image">
+                <img
+                  src="/images/businessman-walking-key-door-new-opportunity_34259-72.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Blog</p>
+            </div>
           </div>
-          <div>
-            <div className="category">Blog</div>
-          </div>
+
         </section>
       </section>
 
