@@ -7,51 +7,33 @@ export default function Landing1() {
   return (
     <HeaderFooter>
       <main>
-        <aside className="left">
-          <h1 className="typewriter">
-            <Typewriter
-              words={[
-                "All your medical expectations in one place.",
-                "Buy, Sell, Swap Medical Equipments with ease.",
-                "Donate blood and save the world.",
-                "Find Unlimited Opportunities by one click.",
-              ]}
-              loop={0}
-              cursor
-              cursorStyle="|"
-              typeSpeed={10}
-              deleteSpeed={10}
-              delaySpeed={1000}
-              // onLoopDone={handleDone}
-              // onType={handleType}
-            />
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            laudantium dolorem quod, eveniet autem nemo! Lorem ipsum dolor sit
-            amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Laudantium, deserunt.
-          </p>
-          <Button variant="contained" className="secondary_button">
-            Explore possibilities
-          </Button>
-          <p className="grey">Endorsed by</p>
-          <div className="partners">
-            <div className="partner">
-              <img src="/images/partners/partner1.jpeg" alt="" />
-            </div>
-            <div className="partner">
-              <img src="/images/partners/partner2.jpeg" alt="" />
-            </div>
-            <div className="partner">
-              <img src="/images/partners/partner3.jpeg" alt="" />
-            </div>
-            <div className="partner">
-              <img src="/images/partners/partner4.jpeg" alt="" />
-            </div>
+        <aside className="top">
+          <div className="description">
+            <h1 className="typewriter">
+              <Typewriter
+                words={[
+                  "All your medical expectations in one place.",
+                  "Buy, Sell, Swap Medical Equipments with ease.",
+                  "Donate blood and save the world.",
+                  "Find Unlimited Opportunities by one click.",
+                ]}
+                loop={0}
+                cursor
+                cursorStyle="|"
+                typeSpeed={10}
+                deleteSpeed={10}
+                delaySpeed={1000}
+                // onLoopDone={handleDone}
+                // onType={handleType}
+              />
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              laudantium dolorem quod, eveniet autem nemo! Lorem ipsum dolor sit
+              amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium, deserunt.
+            </p>
           </div>
-        </aside>
-        <aside className="right">
           <div className="image">
             <img
               src="/images/blood-donation-illustration-concept-with-blood-bag-world-blood-donor-day_95561-346-removebg-preview.png"
@@ -59,12 +41,37 @@ export default function Landing1() {
             />
           </div>
         </aside>
+        <div className="actions">
+          <Button variant="contained" className="secondary_button">
+            Explore possibilities
+          </Button>
+          <p className="grey">Endorsed by</p>
+
+          <div className="partners">
+            <div className="partner">
+              <img src="/images/partners/partner1.jpeg" alt="" />
+            </div>
+
+            <div className="partner">
+              <img src="/images/partners/partner2.jpeg" alt="" />
+            </div>
+
+            <div className="partner">
+              <img src="/images/partners/partner3.jpeg" alt="" />
+            </div>
+
+            <div className="partner">
+              <img src="/images/partners/partner4.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
       </main>
 
       <section className="categories_wrapper">
         <h6>Categories</h6>
         <section className="categories">
           <div>
+            <p>Find Opportunities</p>
             <div className="category">
               <div className="overlay"></div>
               <div className="image">
@@ -73,10 +80,11 @@ export default function Landing1() {
                   alt=""
                 />
               </div>
-              <p>find opportunities</p>
             </div>
           </div>
           <div>
+            <p>Recruitment Agencies</p>
+
             <div className="category">
               <div className="overlay"></div>
               <div className="image">
@@ -85,10 +93,11 @@ export default function Landing1() {
                   alt=""
                 />
               </div>
-              <p>Recruitment Agencies</p>
             </div>
           </div>
           <div>
+            <p>Donate blood</p>
+
             <div className="category">
               <div className="overlay"></div>
               <div className="image">
@@ -97,10 +106,10 @@ export default function Landing1() {
                   alt=""
                 />
               </div>
-              <p>Donate blood</p>
             </div>
           </div>
           <div>
+            <p>Job seekers</p>
             <div className="category">
               <div className="overlay"></div>
               <div className="image">
@@ -109,19 +118,20 @@ export default function Landing1() {
                   alt=""
                 />
               </div>
-              <p>Job seekers</p>
             </div>
           </div>
           <div>
+            <p>Buy and Sell</p>
             <div className="category">
               <div className="overlay"></div>
               <div className="image">
                 <img src="/images/buy-sell-car_2227-315.jpg" alt="" />
               </div>
-              <p>Buy and Sell</p>
             </div>
           </div>
           <div>
+            <p>Swap Equipments</p>
+
             <div className="category">
               <div className="overlay"></div>
               <div className="image">
@@ -130,10 +140,10 @@ export default function Landing1() {
                   alt=""
                 />
               </div>
-              <p>Swap Equipments</p>
             </div>
           </div>
           <div>
+            <p>Medical Centers</p>
             <div className="category">
               <div className="overlay"></div>
               <div className="image">
@@ -142,10 +152,10 @@ export default function Landing1() {
                   alt=""
                 />
               </div>
-              <p>Medical Centers</p>
             </div>
           </div>
           <div>
+            <p>Blog</p>
             <div className="category">
               <div className="overlay"></div>
               <div className="image">
@@ -154,10 +164,10 @@ export default function Landing1() {
                   alt=""
                 />
               </div>
-              <p>Blog</p>
             </div>
           </div>
           <div>
+            <p>Blog</p>
             <div className="category">
               <div className="overlay"></div>
               <div className="image">
@@ -166,10 +176,8 @@ export default function Landing1() {
                   alt=""
                 />
               </div>
-              <p>Blog</p>
             </div>
           </div>
-
         </section>
       </section>
 
