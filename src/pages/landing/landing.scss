@@ -50,18 +50,29 @@ main {
   }
 }
 
-.categories {
-  height: 100px;
-  width: 95%;
-  margin: auto;
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  .category {
-    background-color: var(--clr-white);
-    box-shadow: 2px 4px 4px var(--clr-grey);
-    border-radius: 8px;
-    width: 300px;
+.categories_wrapper {
+  text-align: left;
+  h6 {
+    margin-left: 3rem;
+    padding-left: 1.5rem;
+    border-left: 4px solid maroon;
+  }
+  .categories {
+    height: 150px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    overflow-x: auto;
+    padding: 1rem;
+    .category {
+      background-color: var(--clr-white);
+      box-shadow: 2px 4px 4px var(--clr-grey);
+      border-radius: 8px;
+      width: 150px;
+      height: 100%;
+    }
   }
 }
 
@@ -292,22 +303,18 @@ main {
     }
   }
 
-  .categories {
-    height: 100px;
-    // width: 100%;
-    gap: 1rem;
-    margin-bottom: 3rem;
-    .category {
-      border: 2px solid maroon;
-      background-color: var(--clr-white);
-      box-shadow: 2px 4px 4px var(--clr-grey);
-      border-radius: 8px;
+  .categories_wrapper {
+    h6 {
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+    .categories {
+      height: 150px;
+      width: 100%;
+      gap: 1rem;
       padding: 1rem;
-
-      width: 400px !important;
     }
   }
-
   .find_opportunities {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -370,8 +377,8 @@ main {
           // border: 2px solid maroon;
           height: 50%;
           width: 100%;
-          margin: .5rem auto;
-          padding: 0 .5rem;
+          margin: 0.5rem auto;
+          padding: 0 0.5rem;
           font-size: 90%;
           h6 {
             font-size: 1rem;
@@ -386,8 +393,8 @@ main {
           .read_more {
             width: 50%;
             font-size: 0.5rem;
-            padding: 0.1rem ;
-            margin: .5rem;
+            padding: 0.1rem;
+            margin: 0.5rem;
           }
         }
       }

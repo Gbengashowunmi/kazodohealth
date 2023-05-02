@@ -61,15 +61,40 @@ export default function Landing1() {
         </aside>
       </main>
 
-      <section className="categories">
-        <div className="category">find opportunities</div>
-        <div className="category">Recruitment Agencies</div>
-        <div className="category">donate blood</div>
-        <div className="category">job seekers</div>
-        <div className="category">buy and sell</div>
-        <div className="category">Swap equipments</div>
-        <div className="category">Medical centers</div>
-        <div className="category">Blog</div>
+      <section className="categories_wrapper">
+        <h6>Categories</h6>
+        <section className="categories">
+          <div>
+            <div className="category">find opportunities</div>
+          </div>
+          <div>
+            <div className="category">Recruitment Agencies</div>
+          </div>
+          <div>
+            <div className="category">donate blood</div>
+          </div>
+          <div>
+            <div className="category">job seekers</div>
+          </div>
+          <div>
+            <div className="category">buy and sell</div>
+          </div>
+          <div>
+            <div className="category">Swap equipments</div>
+          </div>
+          <div>
+            <div className="category">Medical centers</div>
+          </div>
+          <div>
+            <div className="category">Blog</div>
+          </div>
+          <div>
+            <div className="category">Blog</div>
+          </div>
+          <div>
+            <div className="category">Blog</div>
+          </div>
+        </section>
       </section>
 
       <article className="find_opportunities">
