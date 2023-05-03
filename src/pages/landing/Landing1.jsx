@@ -3,9 +3,12 @@ import HeaderFooter from "../../components/header-footer/HeaderFooter";
 import "./landing.scss";
 import { Icon } from "@iconify/react";
 import { Typewriter } from "react-simple-typewriter";
+import HeroImage from "../../components/HeroImage";
 export default function Landing1() {
   return (
     <HeaderFooter>
+
+      {/* <HeroImage/> */}
       <main>
         <aside className="top">
           <div className="description">
@@ -20,8 +23,8 @@ export default function Landing1() {
                 loop={0}
                 cursor
                 cursorStyle="|"
-                typeSpeed={10}
-                deleteSpeed={10}
+                typeSpeed={100}
+                deleteSpeed={80}
                 delaySpeed={1000}
                 // onLoopDone={handleDone}
                 // onType={handleType}
@@ -46,7 +49,6 @@ export default function Landing1() {
             Explore possibilities
           </Button>
           <p className="grey">Endorsed by</p>
-
           <div className="partners">
             <div className="partner">
               <img src="/images/partners/partner1.jpeg" alt="" />
@@ -253,12 +255,72 @@ export default function Landing1() {
         <h3>Buy and sell</h3>
         <p>Want to see more? Go to Shop</p>
         <div className="product_items">
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
+          <div className="item">
+            <div className="image">
+              <img
+                src="/images/front-view-shopping-cart-with-pill-foils-containers_23-2148533497.jpg"
+                alt=""
+              />
+            </div>
+            <Button variant="contained" className="shop_btn">
+              Shop now
+            </Button>
+          </div>
+          <div className="item">
+            <div className="image">
+              <img
+                src="/images/high-angle-pill-foils-plastic-containers_23-2148533456.jpg"
+                alt=""
+              />
+            </div>
+            <Button variant="contained" className="shop_btn">
+              Shop now
+            </Button>
+          </div>
+          <div className="item">
+            <div className="image">
+              <img
+                src="/images/toy-cart-with-pills-collection_23-2148550966.jpg"
+                alt=""
+              />
+            </div>
+            <Button variant="contained" className="shop_btn">
+              Shop now
+            </Button>
+          </div>
+          <div className="item">
+            <div className="image">
+              <img
+                src="/images/set-toy-medical-equipment_114579-44513.jpg"
+                alt=""
+              />
+            </div>
+            <Button variant="contained" className="shop_btn">
+              Shop now
+            </Button>
+          </div>
+          <div className="item">
+            <div className="image">
+              <img
+                src="/images/flat-lay-health-still-life-arrangement-with-copy-space_23-2148854064.jpg"
+                alt=""
+              />
+            </div>
+            <Button variant="contained" className="shop_btn">
+              Shop now
+            </Button>
+          </div>
+          <div className="item">
+            <div className="image">
+              <img
+                src="/images/still-life-medical-tools_23-2149371263.jpg"
+                alt=""
+              />
+            </div>
+            <Button variant="contained" className="shop_btn">
+              Shop now
+            </Button>
+          </div>
         </div>
       </article>
 

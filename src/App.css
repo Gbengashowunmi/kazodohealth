@@ -4,6 +4,8 @@
 :root {
   /* primary colors and shades  */
   --clr-primary: #0020ff;
+  --clr-deep-primary: #031480;
+
   --clr-very-light-primary: #dcdff8;
 
   --clr-grey:#808080;
@@ -21,7 +23,7 @@
   --clr-background-grey: rgb(240, 244, 247);
   --clr-border-shadow: rgb(161, 161, 161);
   --clr-reddish-brown: rgb(196, 4, 4);
-  --clr-darker-reddish-brown: rgb(128, 3, 3);
+  --clr-maroon: maroon;
 }
 
 /* *{
@@ -43,12 +45,13 @@ a {
   padding: 0;
   position: relative;
   /* overflow-x: hidden; */
+  color: var(--clr-deep-primary);
   background-color: var(--clr-very-light-primary);
 }
 
 h1 {
   font-size: 4.5rem;
-  color: var(--clr-primary);
+  color: var(--clr-deep-primary);
 }
 h2 {
   font-size: 3.5rem;
@@ -57,10 +60,10 @@ h3 {
   font-size: 2.5rem;
 }
 h4 {
-  font-size: 4rem;
+  font-size: 1.8rem;
 }
 h5 {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 h6 {
   font-size: 1.5rem;
@@ -76,7 +79,6 @@ p {
 @media (max-width:600px) {
   h1 {
   font-size: 2rem;
-  color: var(--clr-primary);
 }
 h2 {
   font-size: 3.5rem;

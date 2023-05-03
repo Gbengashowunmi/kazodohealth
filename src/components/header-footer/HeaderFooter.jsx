@@ -2,14 +2,20 @@ import { Button } from "@mui/material";
 import "./headerfooter.scss";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
+import TemporaryDrawer from "../TemporaryDrawer";
+import { Link } from "react-router-dom";
 export default function HeaderFooter({ children }) {
-
   return (
     <div className="head_foot_wrapper">
       <header className="header_1">
-        <div className="logo">
-          <img src="/images/kazodo logo2.jpg" alt="kazodo logo" />
+        <div className="nav_bar">
+          <TemporaryDrawer />
         </div>
+        <Link to="/">
+          <div className="logo">
+            <img src="/images/kazodo logo2.jpg" alt="kazodo logo" />
+          </div>
+        </Link>
         <div className="search">
           <input type="text" placeholder="Search" />
           <Icon
@@ -21,9 +27,11 @@ export default function HeaderFooter({ children }) {
           />
         </div>
         <div className="actions">
-          <Button variant="contained" className="red_button">
-            Donate Blood
-          </Button>
+          <Link to="donate-blood">
+            <Button variant="contained" className="red_button">
+              Donate Blood
+            </Button>
+          </Link>
 
           <p>login/signup</p>
           <p>Discover</p>
@@ -31,9 +39,6 @@ export default function HeaderFooter({ children }) {
             Become a vendor
           </Button>
         </div>
-        {/* <div className="nav_bar">
-          <TemporaryDrawer />
-        </div> */}
       </header>
       <header className="header_2">
         <p>Find Opporunities</p>

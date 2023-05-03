@@ -200,12 +200,29 @@ main {
       background-color: var(--clr-white);
       transition: 0.6s;
       cursor: pointer;
+      position: relative;
+      .image {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+      .shop_btn {
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        background-color: maroon;
+      }
     }
   }
-  .item:hover {
-    background-color: var(--clr-light-grey);
-    transform: scale(1.02);
-  }
+  // .item:hover {
+  //   background-color: var(--clr-light-grey);
+  //   transform: scale(1.02);
+  // }
 }
 
 .recruiters {
@@ -353,7 +370,7 @@ main {
       gap: 1rem;
       .partners {
         height: fit-content;
-        gap: .5rem;
+        gap: 0.5rem;
         .partner {
           width: 20%;
           height: fit-content;

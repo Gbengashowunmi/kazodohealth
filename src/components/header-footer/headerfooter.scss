@@ -7,7 +7,7 @@
   }
 
   .red_button:hover {
-    background-color: var(--clr-darker-reddish-brown);
+    background-color: var(--clr-maroon);
   }
 
   .primary_button {
@@ -135,6 +135,9 @@
         display: none;
       }
     }
+    .header_2 {
+      display: none;
+    }
   }
 }
 
@@ -147,7 +150,7 @@
         grid-template-columns: 1fr 1fr;
         ul {
           gap: 0.5rem;
-          padding: 0 1rem ;
+          padding: 0 1rem;
         }
       }
       .socials {
