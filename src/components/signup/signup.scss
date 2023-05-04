@@ -1,0 +1,25 @@
+.signup_wrapper {
+  width: 60%;
+  min-height: 400px;
+  height: fit-content;
+  border: 2px solid var(--clr-light-grey);
+  border-radius: 10px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 2rem 6%;
+  background-color: aliceblue;
+
+    span {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .checkbox{
+        display: flex;
+        text-align: left;
+        gap: 1rem;
+        color: black;
+    }
+}

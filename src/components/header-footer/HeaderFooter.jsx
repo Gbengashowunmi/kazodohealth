@@ -27,13 +27,15 @@ export default function HeaderFooter({ children }) {
           />
         </div>
         <div className="actions">
-          <Link to="donate-blood">
+          <Link to="/donate-blood">
             <Button variant="contained" className="red_button">
               Donate Blood
             </Button>
           </Link>
 
-          <p>login/signup</p>
+          <Link to="/signup">
+            <p>login/signup</p>
+          </Link>
           <p>Discover</p>
           <Button variant="contained" className="primary_button">
             Become a vendor

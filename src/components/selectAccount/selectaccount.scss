@@ -1,0 +1,43 @@
+.select_account_wrapper {
+  width: 70%;
+  min-height: 400px;
+  height: fit-content;
+  padding: 2rem 0;
+  border: 2px solid var(--clr-deep-primary);
+  margin: 2rem auto;
+  border-radius: 10px;
+  .option_wrapper {
+    margin: 2rem auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    .option_card {
+      border: 2px solid var(--clr-light-grey);
+      height: 150px;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: left;
+      transition: .6s;
+      cursor: pointer;
+    }
+    .option_card:hover{
+      border: 2px solid var(--clr-deep-primary);
+
+    }
+  }
+
+  .btn{
+    background-color: var(--clr-deep-primary);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: .4rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .btn:hover{
+    background-color: var(--clr-maroon);
+
+  }
+}
+
