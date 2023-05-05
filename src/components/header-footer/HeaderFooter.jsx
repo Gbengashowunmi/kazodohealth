@@ -1,13 +1,29 @@
 import { Button } from "@mui/material";
 import "./headerfooter.scss";
 import { Icon } from "@iconify/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TemporaryDrawer from "../TemporaryDrawer";
 import { Link } from "react-router-dom";
 export default function HeaderFooter({ children }) {
+  // Sticky Menu Area
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = (e) => {
+    const header = document.querySelector(".nav");
+    const scrollTop = window.scrollY;
+    scrollTop >= 40
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
+  };
   return (
     <div className="head_foot_wrapper">
-      <header className="header_1">
+      <header className="header_1 nav">
         <div className="nav_bar">
           <TemporaryDrawer />
         </div>
@@ -33,7 +49,7 @@ export default function HeaderFooter({ children }) {
             </Button>
           </Link>
 
-          <Link to="/signup">
+          <Link to="/select-account">
             <p>login/signup</p>
           </Link>
           <p>Discover</p>
@@ -46,7 +62,7 @@ export default function HeaderFooter({ children }) {
         <p>Find Opporunities</p>
         <p>Find Consultants</p>
         <p>Find Talents</p>
-        <p>Go to Shop</p>
+          <p>Go to Shop</p>
       </header>
       {children}
       <footer>

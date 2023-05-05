@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Signup() {
   return (
     <div className="signup_wrapper">
-      <h4>Sign up to find opportunities</h4>
+      <h4>Sign up to (what user selected)</h4>
       <Divider />
 
       <span>

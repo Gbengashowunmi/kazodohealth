@@ -23,8 +23,8 @@ export default function LoginPage() {
 
         <Button variant="contained">Login</Button>
 
+        <Divider />
         <p>Don't have an account?</p>
-        <Divider/>
         <Link to="/signup">
           <Button variant="contained">Sign up</Button>
         </Link>

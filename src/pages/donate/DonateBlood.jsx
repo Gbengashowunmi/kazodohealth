@@ -3,6 +3,7 @@ import HeaderFooter from "../../components/header-footer/HeaderFooter";
 import "./donate_blood.scss";
 import MedicalCenters from "../../components/MedicalCenters";
 import DonorCard from "../../components/donorCard/DonorCard";
+import { Link } from "react-router-dom";
 
 export default function DonateBlood() {
   return (
@@ -17,9 +18,11 @@ export default function DonateBlood() {
               aliquid magnam rerum. Assumenda aliquam voluptas voluptatum
               corrupti!
             </p>
-            <Button variant="contained" className="white_btn">
-              Donate Blood
-            </Button>
+            <Link to="/signup">
+              <Button variant="contained" className="white_btn">
+                Donate Blood
+              </Button>
+            </Link>
           </div>
 
           <div className="image">
@@ -48,9 +51,11 @@ export default function DonateBlood() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
                 libero illo sed?
               </p>
-              <Button variant="contained" style={{ backgroundColor: "blue" }}>
-                Sign Up
-              </Button>
+              <Link to="/signup">
+                <Button variant="contained" style={{ backgroundColor: "blue" }}>
+                  Sign Up
+                </Button>
+              </Link>
             </div>
             <div className="step ">
               <h4>Turn on your availability status</h4>

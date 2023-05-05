@@ -3,12 +3,10 @@ import HeaderFooter from "../../components/header-footer/HeaderFooter";
 import "./landing.scss";
 import { Icon } from "@iconify/react";
 import { Typewriter } from "react-simple-typewriter";
-import HeroImage from "../../components/HeroImage";
+import { Link } from "react-router-dom";
 export default function Landing1() {
   return (
     <HeaderFooter>
-
-      {/* <HeroImage/> */}
       <main>
         <aside className="top">
           <div className="description">
@@ -34,20 +32,55 @@ export default function Landing1() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
               laudantium dolorem quod, eveniet autem nemo! Lorem ipsum dolor sit
               amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, deserunt.
+              Laudantium, deserunt. Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Accusantium nesciunt ipsum dignissimos commodi
+              culpa, nobis iusto consequuntur maiores assumenda. Laborum,
+              necessitatibus. Officia, incidunt! Repudiandae assumenda in ea
+              aliquam provident ex a incidunt modi ipsa ipsam.
             </p>
+            <Button variant="contained" className="secondary_button explore">
+              Explore possibilities
+            </Button>
           </div>
           <div className="image">
-            <img
-              src="/images/blood-donation-illustration-concept-with-blood-bag-world-blood-donor-day_95561-346-removebg-preview.png"
-              alt=""
-            />
+            <div className="img">
+              <Link to="donate-blood">
+                <div className="overlay"></div>
+                <img
+                  src="/images/blood-donation-illustration-concept-with-blood-bag-world-blood-donor-day_95561-346-removebg-preview.png"
+                  alt=""
+                  className="border"
+                />
+              </Link>
+            </div>
+
+            <div className="img">
+              <Link to="https://kazodo-health.netlify.app/" target="blank">
+              <div className="overlay"></div>
+                <img
+                  src="/images/e-commerce-digital-internet-technology-web-concept_53876-127365.jpg"
+                  alt=""
+                />
+              </Link>
+            </div>
+
+            <div className="img">
+              <div className="overlay"></div>
+              <img
+                src="/images/update-icon-3d-render-illustration_567294-3081.jpg"
+                alt=""
+              />
+            </div>
+            <div className="img">
+              <div className="overlay"></div>
+              <img
+                src="/images/job-3d-word-with-loupe-chalkboard_165073-777.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </aside>
         <div className="actions">
-          <Button variant="contained" className="secondary_button">
-            Explore possibilities
-          </Button>
           <p className="grey">Endorsed by</p>
           <div className="partners">
             <div className="partner">
@@ -253,7 +286,14 @@ export default function Landing1() {
 
       <article className="buy_sell">
         <h3>Buy and sell</h3>
-        <p>Want to see more? Go to Shop</p>
+        <p>
+          Want to see more?{" "}
+          <span>
+            <Link to="https://kazodo-health.netlify.app/" target="blank">
+              Go to Shop
+            </Link>
+          </span>
+        </p>
         <div className="product_items">
           <div className="item">
             <div className="image">
@@ -384,6 +424,7 @@ export default function Landing1() {
               </div>
             </div>
           </div>
+          <Button variant="contained"> Take Action</Button>
         </div>
       </div>
 
@@ -474,24 +515,30 @@ export default function Landing1() {
         </div>
       </div>
 
-      <div className="swap">
-        <div className="image">
-          <img
-            src="/images/3d-african-american-hand-giving-golden-coin_107791-16850-removebg-preview.png"
-            alt=""
-          />
-        </div>
-        <div className="content">
-          <h5>Swap your Equipment with ease</h5>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
-            voluptas pariatur. Rem nam quasi modi voluptatem quod, unde ipsa non
-            ipsam architecto libero a rerum expedita fugiat vero asperiores
-            assumenda!
-          </p>
-          <Button variant="contained" className="green">
-            Take Action
-          </Button>
+      <div className="swap_wrapper">
+        <h3>Swap your Equipment with ease</h3>
+
+        <div className="swap">
+          <div className="image">
+            <img
+              src="/images/3d-african-american-hand-giving-golden-coin_107791-16850-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div className="content">
+            <h5>Steps to swap your Equipment with ease</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
+              voluptas pariatur. Rem nam quasi modi voluptatem quod, unde ipsa
+              non ipsam architecto libero a rerum expedita fugiat vero
+              asperiores assumenda! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Sunt et delectus totam mollitia exercitationem
+              quas numquam eos ratione voluptatum voluptatem?
+            </p>
+            <Button variant="contained" className="green">
+              Take Action
+            </Button>
+          </div>
         </div>
       </div>
     </HeaderFooter>
