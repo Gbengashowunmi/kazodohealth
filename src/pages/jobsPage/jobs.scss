@@ -1,0 +1,41 @@
+.job_header {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  .active {
+    border-bottom: 3px solid var(--clr-secondary);
+    
+  }
+  h6 {
+    margin: 0;
+    padding: 0.5rem 2rem;
+  }
+}
+.jobs_wrapper {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 4rem;
+  border: var(--grey-border);
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  position: relative;
+  .jobs{
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .active{
+        border: 1px solid var(--clr-maroon);
+    }
+  }
+  .selected_job{
+    border: var(--grey-border);
+    position: sticky;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 0 0;
+    background-color: var(--clr-white);
+  }
+}

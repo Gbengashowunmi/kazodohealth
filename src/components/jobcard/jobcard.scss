@@ -1,0 +1,47 @@
+.job_card{
+    width: 100%;
+    min-height: 200px;
+    height: fit-content;
+    border-radius: 10px;
+    border: var(--grey-border);
+    text-align: left;
+    padding: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    background-color: var(--clr-white);
+    header{
+        display: flex;
+        justify-content: space-between;
+        // p{
+        //     color: var( --clr-maroon);
+        // }
+.when{
+    background-color: var(--clr-secondary);
+    border-radius: 6px;
+    padding: 2px .4rem;
+    color: var(--clr-white);
+}
+    }
+    .co_name, .state{
+        font-size: 1.2rem;
+    }
+    span{
+        display: flex;
+        color: var(--clr-white);
+        align-items: center;
+        background-color: var(--clr-secondary);
+        width: fit-content;
+        padding: .2rem 1rem;
+        border-radius: 5px;
+        gap: .5rem;
+    }
+    .card_job_description{
+        // border: 2px solid red;
+        font-size: .9rem;
+        ul{
+            list-style: circle;
+        }
+    }
+}

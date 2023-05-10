@@ -9,6 +9,7 @@ import LoginPage from "./pages/LoginPage";
 import ScrollToTopNav from "./components/ScrollToTopNav";
 import ScrollToTop from "react-scroll-to-top";
 import SelectAccount from "./components/selectAccount/SelectAccount";
+import Jobs from "./pages/jobsPage/Jobs";
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
           <Route path="select-account" element={<SelectAccount />} />
           <Route path="signup" element={<SignupPage />} />
           <Route path="login" element={<LoginPage />} />
+          <Route path="jobs" element={<Jobs />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -56,7 +56,7 @@ export default function Landing1() {
 
             <div className="img">
               <Link to="https://kazodo-health.netlify.app/" target="blank">
-              <div className="overlay"></div>
+                <div className="overlay"></div>
                 <img
                   src="/images/e-commerce-digital-internet-technology-web-concept_53876-127365.jpg"
                   alt=""
@@ -143,16 +143,19 @@ export default function Landing1() {
               </div>
             </div>
           </div>
+
           <div>
             <p>Job seekers</p>
             <div className="category">
+              <Link to="jobs">
               <div className="overlay"></div>
-              <div className="image">
-                <img
-                  src="/images/job-3d-word-with-loupe-chalkboard_165073-777.jpg"
-                  alt=""
-                />
-              </div>
+                <div className="image">
+                  <img
+                    src="/images/job-3d-word-with-loupe-chalkboard_165073-777.jpg"
+                    alt=""
+                  />
+                </div>
+              </Link>
             </div>
           </div>
           <div>
@@ -276,10 +279,7 @@ export default function Landing1() {
         </div>
         <div className="right">
           <div className="image">
-            <img
-              src="/images/business-leaders-lead-their-business-success-by-seeking-out-new-ideas-promote-business-grow_1150-65834.jpg"
-              alt=""
-            />
+            <img src="/images/unnamed-removebg-preview.png" alt="" />
           </div>
         </div>
       </article>
