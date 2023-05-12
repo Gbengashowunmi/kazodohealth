@@ -1,0 +1,29 @@
+.what_we_offer {
+  display: flex;
+  text-align: left;
+  //   border: 2px solid ;
+//   color: black;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+  //   border: 2px solid;
+  width: 70%;
+  margin-left: 10%;
+  .image {
+    width: 8rem;
+    height: 8rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    ul {
+      list-style: circle !important;
+    }
+  }
+}
+
+.what_we_offer:not(:last-child) {
+  /* your css here */
+  border-bottom: var(--grey-border);
+}

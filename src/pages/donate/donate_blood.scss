@@ -1,42 +1,5 @@
 .donate_blood_wrapper {
-  .hero {
-    width: 95%;
-    margin: 1rem auto;
-    min-height: 400px;
-    background-color: maroon;
-    border-radius: 20px;
-    color: var(--clr-white);
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    text-align: left;
-    gap: 2rem;
-    padding: 1rem 2rem;
-    .hero_desc {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      align-items: flex-start;
-      justify-content: center;
-      .white_btn {
-        background-color: whitesmoke;
-        color: maroon;
-      }
-      .white_btn:hover {
-        background-color: maroon;
-        color: var(--clr-white);
-      }
-    }
-    .image {
-      height: 100%;
-      margin: auto;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-      }
-    }
-  }
+
   .how_to_donate {
     border: 1px solid var(--clr-grey);
     border-radius: 10px;

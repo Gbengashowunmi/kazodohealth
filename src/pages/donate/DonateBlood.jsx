@@ -4,34 +4,20 @@ import "./donate_blood.scss";
 import MedicalCenters from "../../components/MedicalCenters";
 import DonorCard from "../../components/donorCard/DonorCard";
 import { Link } from "react-router-dom";
+import Herosection from "../../components/hero/Herosection";
 
 export default function DonateBlood() {
   return (
     <HeaderFooter>
       <div className="donate_blood_wrapper">
-        <div className="hero">
-          <div className="hero_desc">
-            <h2>Donate Blood and save a life</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              reprehenderit voluptatem vitae sint quae quam delectus molestias
-              aliquid magnam rerum. Assumenda aliquam voluptas voluptatum
-              corrupti!
-            </p>
-            <Link to="/signup">
-              <Button variant="contained" className="white_btn">
-                Donate Blood
-              </Button>
-            </Link>
-          </div>
-
-          <div className="image">
-            <img
-              src="/images/240_F_96077494_cW2d6pkpb2Hbvb3ABbKPVLevQP7Ck9xD.jpg"
-              alt=""
-            />
-          </div>
-        </div>
+        <Herosection
+          heroText="Donate Blood and save a life"
+          description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+          reprehenderit voluptatem vitae sint quae quam delectus molestias
+          aliquid magnam rerum. Assumenda aliquam voluptas voluptatum corrupti!"
+          buttonText="Donate Blood"
+          image="/images/240_F_96077494_cW2d6pkpb2Hbvb3ABbKPVLevQP7Ck9xD.jpg"
+        />
 
         <div className="how_to_donate">
           <>
@@ -86,8 +72,16 @@ export default function DonateBlood() {
             </div>
           </>
         </div>
-        <MedicalCenters />
-
+        <div className="medical_centers">
+          <h3>Find Hospitals/Medical Centers Nearby</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            voluptas, aperiam vel eaque soluta officia facere nemo quas nihil
+            earum?
+          </p>
+          <hr />
+          <MedicalCenters />
+        </div>
         <div className="donor_section">
           <h4>Meet the Donors of the month</h4>
           <div className="donor_wrapper">

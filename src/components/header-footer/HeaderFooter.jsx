@@ -59,10 +59,16 @@ export default function HeaderFooter({ children }) {
         </div>
       </header>
       <header className="header_2">
-        <p>Find Opporunities</p>
+        <Link to="/jobs">
+          <p>Find Opportunities</p>
+        </Link>
         <p>Find Consultants</p>
-        <p>Find Talents</p>
+        <Link to="/talents">
+          <p>Find Talents</p>
+        </Link>
+        <Link to="https://kazodo-health.netlify.app/" target="blank">
           <p>Go to Shop</p>
+        </Link>
       </header>
       {children}
       <footer>

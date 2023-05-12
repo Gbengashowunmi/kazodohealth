@@ -4,6 +4,7 @@ import "./landing.scss";
 import { Icon } from "@iconify/react";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
+import MedicalCenters from "../../components/MedicalCenters";
 export default function Landing1() {
   return (
     <HeaderFooter>
@@ -130,25 +131,27 @@ export default function Landing1() {
               </div>
             </div>
           </div>
+
           <div>
             <p>Donate blood</p>
-
-            <div className="category">
-              <div className="overlay"></div>
-              <div className="image">
-                <img
-                  src="/images/240_F_222823036_n9ocpis9ILjK6KuOMV4v7urh4dlHCvSq.jpg"
-                  alt=""
-                />
+            <Link to="/donate-blood">
+              <div className="category">
+                <div className="overlay"></div>
+                <div className="image">
+                  <img
+                    src="/images/240_F_222823036_n9ocpis9ILjK6KuOMV4v7urh4dlHCvSq.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div>
             <p>Job seekers</p>
             <div className="category">
               <Link to="jobs">
-              <div className="overlay"></div>
+                <div className="overlay"></div>
                 <div className="image">
                   <img
                     src="/images/job-3d-word-with-loupe-chalkboard_165073-777.jpg"
@@ -436,83 +439,7 @@ export default function Landing1() {
           earum?
         </p>
         <hr />
-        <div className="hospital_card_wrapper">
-          <div className="hospital_card">
-            <div className="image">
-              <img
-                src="/images/240_F_145493527_D4bH1uFdUupCds7fK3RTQ7c1V9x4q5at.jpg"
-                alt=""
-              />
-            </div>
-            <div className="hospital_description">
-              <h6>Medpau Int'l Ltd</h6>
-              <p>Lorem ipsum dolor sit amet consectetur...</p>
-              <Button variant="contained" className="green read_more">
-                Read More
-              </Button>
-            </div>
-          </div>
-          <div className="hospital_card">
-            <div className="image">
-              <img
-                src="/images/240_F_97370006_h6UiPHaO0zZ2Pleh2sNhBA3l7YGUFbUn.jpg"
-                alt=""
-              />
-            </div>
-            <div className="hospital_description">
-              <h6>Medpau Int'l Ltd</h6>
-              <p>Lorem ipsum dolor sit amet consectetur...</p>
-              <Button variant="contained" className="green read_more">
-                Read More
-              </Button>
-            </div>
-          </div>
-          <div className="hospital_card">
-            <div className="image">
-              <img
-                src="/images/240_F_129996095_8ZRakjCOtDWravEcU774ItwFEM9A3aH1.jpg"
-                alt=""
-              />
-            </div>
-            <div className="hospital_description">
-              <h6>Medpau Int'l Ltd</h6>
-              <p>Lorem ipsum dolor sit amet consectetur...</p>
-              <Button variant="contained" className="green read_more">
-                Read More
-              </Button>
-            </div>
-          </div>
-          <div className="hospital_card">
-            <div className="image">
-              <img
-                src="/images/240_F_30021057_dcjhfPkg8nzYYEzJWc7d6k5mBXO9Qmat.jpg"
-                alt=""
-              />
-            </div>
-            <div className="hospital_description">
-              <h6>Medpau Int'l Ltd</h6>
-              <p>Lorem ipsum dolor sit amet consectetur...</p>
-              <Button variant="contained" className="green read_more">
-                Read More
-              </Button>
-            </div>
-          </div>
-          <div className="hospital_card">
-            <div className="image">
-              <img
-                src="/images/240_F_211156620_CeBr5etdTNXLb231sFcQ8M9YD1OY5IW8.jpg"
-                alt=""
-              />
-            </div>
-            <div className="hospital_description">
-              <h6>Medpau Int'l Ltd</h6>
-              <p>Lorem ipsum dolor sit amet consectetur...</p>
-              <Button variant="contained" className="green read_more">
-                Read More
-              </Button>
-            </div>
-          </div>
-        </div>
+        <MedicalCenters />
       </div>
 
       <div className="swap_wrapper">

@@ -8,10 +8,11 @@
 
   --clr-very-light-primary: #dcdff8;
 
-  --clr-grey:#808080;
-  --clr-light-grey:#c5c3c3;
+  --clr-grey: #808080;
+  --clr-light-grey: #c5c3c3;
   /* secondary colors and shades  */
---clr-secondary: #067e06;
+  --clr-secondary: #067e06;
+  --clr-light-secondary: #23d366;
   /* borders  */
   --grey-border: 1px solid #c6c6c7;
   /* shadows  */
@@ -31,9 +32,6 @@
   padding: 0;
 } */
 
-ul {
-  list-style-type: none;
-}
 a {
   text-decoration: none;
 }
@@ -66,7 +64,7 @@ h5 {
   font-size: 1.5rem;
 }
 h6 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 p {
@@ -75,32 +73,31 @@ p {
   margin: 0;
 }
 
-
-@media (max-width:600px) {
+@media (max-width: 600px) {
   h1 {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 3.5rem;
-}
-h3 {
-  font-size: 2.5rem;
-}
-h4 {
-  font-size: 4rem;
-}
-h5 {
-  font-size: 3rem;
-}
-h6 {
-  font-size: 1.5rem;
-}
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 4rem;
+  }
+  h5 {
+    font-size: 3rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
 
-p {
-  font-size: 1rem;
-  padding: 0;
-  margin: 0;
-}
+  p {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
 }
 /* .App .scroll_up {
   width: 3rem;
