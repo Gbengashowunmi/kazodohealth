@@ -73,11 +73,13 @@ export default function Landing1() {
               />
             </div>
             <div className="img">
-              <div className="overlay"></div>
-              <img
-                src="/images/job-3d-word-with-loupe-chalkboard_165073-777.jpg"
-                alt=""
-              />
+              <Link to="/jobs">
+                <div className="overlay"></div>
+                <img
+                  src="/images/job-3d-word-with-loupe-chalkboard_165073-777.jpg"
+                  alt=""
+                />
+              </Link>
             </div>
           </div>
         </aside>
@@ -427,7 +429,9 @@ export default function Landing1() {
               </div>
             </div>
           </div>
-          <Button variant="contained"> Take Action</Button>
+          <Link to="/talents">
+            <Button variant="contained"> Take Action</Button>
+          </Link> 
         </div>
       </div>
 

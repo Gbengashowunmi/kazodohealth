@@ -62,6 +62,31 @@ export default function Jobs() {
               image="/images/240_F_97370006_h6UiPHaO0zZ2Pleh2sNhBA3l7YGUFbUn.jpg"
               description="Lorem ipsum dolor sit amet consectetur..."
             />
+            <HospitalCard
+              name="Lorem ipsum dolor."
+              image="/images/240_F_97370006_h6UiPHaO0zZ2Pleh2sNhBA3l7YGUFbUn.jpg"
+              description="Lorem ipsum dolor sit amet consectetur..."
+            />
+            <HospitalCard
+              name="Lorem ipsum dolor."
+              image="/images/240_F_97370006_h6UiPHaO0zZ2Pleh2sNhBA3l7YGUFbUn.jpg"
+              description="Lorem ipsum dolor sit amet consectetur..."
+            />
+            <HospitalCard
+              name="Lorem ipsum dolor."
+              image="/images/240_F_97370006_h6UiPHaO0zZ2Pleh2sNhBA3l7YGUFbUn.jpg"
+              description="Lorem ipsum dolor sit amet consectetur..."
+            />
+            <HospitalCard
+              name="Lorem ipsum dolor."
+              image="/images/240_F_97370006_h6UiPHaO0zZ2Pleh2sNhBA3l7YGUFbUn.jpg"
+              description="Lorem ipsum dolor sit amet consectetur..."
+            />
+            <HospitalCard
+              name="Lorem ipsum dolor."
+              image="/images/240_F_97370006_h6UiPHaO0zZ2Pleh2sNhBA3l7YGUFbUn.jpg"
+              description="Lorem ipsum dolor sit amet consectetur..."
+            />
           </div>
         </div>
       )}

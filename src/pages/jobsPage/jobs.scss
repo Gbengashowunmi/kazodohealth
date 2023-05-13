@@ -68,6 +68,11 @@
     }
   }
   .hospital_cards{
-    border: 2px solid red;
+    width: 100%;
+    // border: 2px solid red;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 }

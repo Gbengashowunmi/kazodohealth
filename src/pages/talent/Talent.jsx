@@ -64,6 +64,15 @@ export default function Talent() {
             list5="something something something"
           />
           <WhatWeOfferCard
+            image="/images/image-upload-concept-illustration_114360-996-removebg-preview.png"
+            header="Post Job"
+            list1="something something something"
+            list2="something something something"
+            list3="something something something"
+            list4="something something something"
+            list5="something something something"
+          />
+          <WhatWeOfferCard
             image="/images/select-concept-illustration_114360-383-removebg-preview.png"
             header="Select preferred talent"
             list1="something something something"
@@ -80,23 +89,20 @@ export default function Talent() {
         </aside>
 
         <section className="search_talents">
-          {/* <div className="backbox"></div> */}
-          {/* <div className="image"> */}
-            <img
-              src="/images/close-up-african-american-hand-holding-stethoscope_482257-19507 (1).jpg"
-              alt="medical"
-            />
-          {/* </div> */}
-          <div>
+          <img
+            src="/images/close-up-african-american-hand-holding-stethoscope_482257-19507 (1).jpg"
+            alt="medical"
+          />
+          <div className="action">
             <h5>Take the first step toward a smarter talent strategy</h5>
-            <hr />
+            {/* <hr /> */}
             <span>
               <p>
                 <strong>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Fugiat, dolor.
                 </strong>
-              </p>{" "}
+              </p>
               <button>Find talents</button>
             </span>
           </div>
